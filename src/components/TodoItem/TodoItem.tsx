@@ -49,6 +49,7 @@ export const TodoItem: FC<Props> = ({
       <label className="todo__status-label">
         <input
           data-cy="TodoStatus"
+          aria-label="TodoStatus"
           type="checkbox"
           className="todo__status"
           checked={completed}
@@ -78,6 +79,7 @@ export const TodoItem: FC<Props> = ({
           <button
             type="button"
             className="todo__remove"
+            aria-label="TodoDelete"
             data-cy="TodoDelete"
             onClick={() => onDeleteTodo(id)}
           >

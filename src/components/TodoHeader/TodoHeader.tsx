@@ -39,6 +39,7 @@ export const TodoHeader: FC<Props> = ({
           className={cn('todoapp__toggle-all', {
             active: activeTodosAmount === 0,
           })}
+          aria-label="ToggleAllTodos"
           data-cy="ToggleAllButton"
           onClick={onToggleAllTodos}
         />
